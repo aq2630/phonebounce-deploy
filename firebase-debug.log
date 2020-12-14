@@ -1,0 +1,149 @@
+[debug] [2020-12-14T12:14:40.836Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:14:40.839Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-14T12:14:40.840Z] CLI Version:   8.19.0
+[debug] [2020-12-14T12:14:40.840Z] Platform:      win32
+[debug] [2020-12-14T12:14:40.840Z] Node Version:  v14.15.1
+[debug] [2020-12-14T12:14:40.841Z] Time:          Mon Dec 14 2020 17:14:40 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-14T12:14:40.842Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:14:40.842Z] 
+[debug] [2020-12-14T12:14:40.853Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-14T12:14:40.853Z] > authorizing via signed-in user
+[debug] [2020-12-14T12:14:40.854Z] [iam] checking project phonebounce-47775 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-14T12:14:40.858Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-14T12:14:40.858Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-14T12:14:41.565Z] <<< HTTP RESPONSE 500 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Mon, 14 Dec 2020 12:14:44 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T12:14:41.567Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-12-14T12:14:41.568Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-14T12:14:41.569Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-14T12:14:42.005Z] <<< HTTP RESPONSE 500 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Dec 2020 12:14:45 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T12:14:42.006Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-12-14T12:14:42.324Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:20:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:5:24)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+[error] 
+[error] Error: Failed to get Firebase project phonebounce-47775. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-12-14T12:15:05.266Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:15:05.269Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2020-12-14T12:15:05.269Z] CLI Version:   8.19.0
+[debug] [2020-12-14T12:15:05.269Z] Platform:      win32
+[debug] [2020-12-14T12:15:05.269Z] Node Version:  v14.15.1
+[debug] [2020-12-14T12:15:05.271Z] Time:          Mon Dec 14 2020 17:15:05 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-14T12:15:05.271Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:15:05.271Z] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=610241622&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=a.qadirsscl%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-14T12:23:23.029Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:23:23.032Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-14T12:23:23.032Z] CLI Version:   8.19.0
+[debug] [2020-12-14T12:23:23.033Z] Platform:      win32
+[debug] [2020-12-14T12:23:23.033Z] Node Version:  v14.15.1
+[debug] [2020-12-14T12:23:23.034Z] Time:          Mon Dec 14 2020 17:23:23 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-14T12:23:23.034Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:23:23.035Z] 
+[debug] [2020-12-14T12:23:23.045Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-14T12:23:23.046Z] > authorizing via signed-in user
+[debug] [2020-12-14T12:23:23.046Z] [iam] checking project phonebounce-47775 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-14T12:23:23.050Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-14T12:23:23.051Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-14T12:23:23.599Z] <<< HTTP RESPONSE 500 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Mon, 14 Dec 2020 12:23:26 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T12:23:23.602Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-12-14T12:23:23.605Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-14T12:23:23.605Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-14T12:23:24.011Z] <<< HTTP RESPONSE 500 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Mon, 14 Dec 2020 12:23:27 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T12:23:24.012Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2020-12-14T12:23:24.320Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:23:32)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\github.js:20:16)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1092:10)
+    at Module.load (internal/modules/cjs/loader.js:928:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:769:14)
+    at Module.require (internal/modules/cjs/loader.js:952:19)
+    at require (internal/modules/cjs/helpers.js:88:18)
+    at Object.<anonymous> (C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\init\features\hosting\index.js:5:24)
+    at Module._compile (internal/modules/cjs/loader.js:1063:30)
+[error] 
+[error] Error: Failed to get Firebase project phonebounce-47775. Please make sure the project exists and your account has permission to access it.
+[debug] [2020-12-14T12:23:31.450Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:23:31.453Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js login --reauth
+[debug] [2020-12-14T12:23:31.453Z] CLI Version:   8.19.0
+[debug] [2020-12-14T12:23:31.454Z] Platform:      win32
+[debug] [2020-12-14T12:23:31.454Z] Node Version:  v14.15.1
+[debug] [2020-12-14T12:23:31.455Z] Time:          Mon Dec 14 2020 17:23:31 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-14T12:23:31.455Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T12:23:31.455Z] 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://accounts.google.com/o/oauth2/auth?client_id=563584335869-fgrhgmd47bqnekij5i8b5pr03ho849e6.apps.googleusercontent.com&scope=email%20openid%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloudplatformprojects.readonly%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Ffirebase%20https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcloud-platform&response_type=code&state=386515047&redirect_uri=http%3A%2F%2Flocalhost%3A9005&login_hint=a.qadirsscl%40gmail.com
+[info] 
+[info] Waiting for authentication...
+[debug] [2020-12-14T16:34:04.386Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T16:34:04.389Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Abdul Qadir\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-12-14T16:34:04.390Z] CLI Version:   8.19.0
+[debug] [2020-12-14T16:34:04.390Z] Platform:      win32
+[debug] [2020-12-14T16:34:04.390Z] Node Version:  v14.15.1
+[debug] [2020-12-14T16:34:04.392Z] Time:          Mon Dec 14 2020 21:34:04 GMT+0500 (Pakistan Standard Time)
+[debug] [2020-12-14T16:34:04.392Z] ----------------------------------------------------------------------
+[debug] [2020-12-14T16:34:04.392Z] 
+[debug] [2020-12-14T16:34:04.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-12-14T16:34:04.406Z] > authorizing via signed-in user
+[debug] [2020-12-14T16:34:04.407Z] [iam] checking project phonebounce-47775 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2020-12-14T16:34:04.412Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-12-14T16:34:04.412Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-12-14T16:34:04.972Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","date":"Mon, 14 Dec 2020 16:34:03 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T16:34:04.980Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/phonebounce-47775:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2020-12-14T16:34:06.650Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Dec 2020 16:34:05 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=1177","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-12-14T16:34:06.655Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/phonebounce-47775  
+ 
+[debug] [2020-12-14T16:34:08.196Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Mon, 14 Dec 2020 16:34:06 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] 
+[info] === Deploying to 'phonebounce-47775'...
+[info] 
+[info] i  deploying hosting 
+[debug] [2020-12-14T16:34:08.226Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/phonebounce-47775/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2020-12-14T16:34:30.236Z] Error: connect ETIMEDOUT 216.58.207.106:443
+    at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1146:16)
+[error] 
+[error] Error: Server Error. connect ETIMEDOUT 216.58.207.106:443
